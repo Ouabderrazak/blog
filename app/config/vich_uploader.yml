@@ -1,0 +1,3 @@
+#vich upload configuration
+vich_uploader:
+    db_driver: orm

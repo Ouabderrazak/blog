@@ -1,0 +1,153 @@
+#----------Sonata Translation
+Users: Contacts
+profile_title: Votre compte a bien été créer
+goto_dashboard: Cliquer ici pour accéder au tableau de bord
+create_account: Créér un nouveau compte
+
+#---------- breadcrumb translation
+breadcrumb:
+  link_user_list: Liste des contacts
+  link_user_create: Ajouter
+
+#-------------form translation
+form:
+  #user
+  label_username: Pseudo
+  label_firstname: Prénom
+  label_lastname: Nom
+  label_email: Email
+  label_groups: Groupes
+  label_enabled: Activé
+  label_locked: Verrouillé
+  label_created_at: Date de Création
+  label_impersonating: Impersonalisation
+  label__action: Actions
+  label_date_of_birth: Date de naissance
+  label_facebook_uid: Id Facebook
+  label_facebook_name: Nom Facebook
+  label_twitter_uid: Id Twitter
+  label_twitter_name: Nom twitter
+  label_gplus_uid: Id Google +
+  label_gplus_name: Nom Google +
+  label_locale: Langue
+  label_timezone: Fusion horaire
+  label_expired: Expiré
+  label_credentials_expired: Droits expirés
+  label_roles: Roles
+  label_token: Jeton
+  label_two_step_verification_code: Code de validation en deux étapes
+  label_biography: Biographie
+  label_phone: Téléphone
+  label_address: Adresse
+  label_website: Site web
+
+
+#-----------------filter translation
+filter:
+  #user
+  label_username: Pseudo
+  label_firstname: Prénom
+  label_lastname: Nom
+  label_email: Email
+  label_groups: Groupes
+  label_enabled: Activé
+  label_locked: Verrouillé
+  label_created_at: Date de Création
+  label_impersonating: Impersonalisation
+  label__action: Actions
+  label_date_of_birth: Date de naissance
+  label_facebook_uid: Id Facebook
+  label_facebook_name: Nom Facebook
+  label_twitter_uid: Id Twitter
+  label_twitter_name: Nom twitter
+  label_gplus_uid: Id Google +
+  label_gplus_name: Nom Google +
+  label_locale: Langue
+  label_timezone: Fusion horaire
+  label_expired: Expiré
+  label_credentials_expired: Droits expirés
+  label_roles: Roles
+  label_token: Jeton
+  label_two_step_verification_code: Code de validation en deux étapes
+  label_biography: Biographie
+  label_phone: Téléphone
+  label_address: Adresse
+  label_website: Site web
+
+#---------------List translation
+list:
+  #user
+  label_username: Pseudo
+  label_firstname: Prénom
+  label_lastname: Nom
+  label_email: Email
+  label_groups: Groupes
+  label_enabled: Activé
+  label_locked: Verrouillé
+  label_created_at: Date de Création
+  label_impersonating: Impersonalisation
+  label__action: Actions
+  label_date_of_birth: Date de naissance
+  label_facebook_uid: Id Facebook
+  label_facebook_name: Nom Facebook
+  label_twitter_uid: Id Twitter
+  label_twitter_name: Nom twitter
+  label_gplus_uid: Id Google +
+  label_gplus_name: Nom Google +
+  label_locale: Langue
+  label_timezone: Fusion horaire
+  label_expired: Expiré
+  label_credentials_expired: Droits expirés
+  label_roles: Roles
+  label_token: Jeton
+  label_two_step_verification_code: Code de validation en deux étapes
+  label_biography: Biographie
+  label_phone: Téléphone
+  label_address: Adresse
+  label_website: Site web
+
+
+#----------------Show translation
+show:
+  #user
+  label_username: Pseudo
+  label_firstname: Prénom
+  label_lastname: Nom
+  label_email: Email
+  label_groups: Groupes
+  label_enabled: Activé
+  label_locked: Verrouillé
+  label_created_at: Date de Création
+  label_impersonating: Impersonalisation
+  label__action: Actions
+  label_date_of_birth: Date de naissance
+  label_facebook_uid: Id Facebook
+  label_facebook_name: Nom Facebook
+  label_twitter_uid: Id Twitter
+  label_twitter_name: Nom twitter
+  label_gplus_uid: Id Google +
+  label_gplus_name: Nom Google +
+  label_locale: Langue
+  label_timezone: Fusion horaire
+  label_expired: Expiré
+  label_credentials_expired: Droits expirés
+  label_roles: Roles
+  label_token: Jeton
+  label_two_step_verification_code: Code de validation en deux étapes
+  label_biography: Biographie
+  label_phone: Téléphone
+  label_address: Adresse
+  label_website: Site web
+
+#--------------- Choices translation
+form.label_gender: Sexe
+gender_female: Femme
+gender_male: Homme
+gender_unknown: Inconnu
+
+choice:
+  state_accepted: Accepté
+  state_archived: Archivé
+  state_canceled: Annulé
+  state_finished: Terminé
+  state_waiting: En attente

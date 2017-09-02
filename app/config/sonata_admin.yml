@@ -1,0 +1,78 @@
+# Default configuration for "SonataAdminBundle"
+sonata_admin:
+    title: 'Blog'
+    title_logo: /images/logo.jpg
+    security:
+        handler: sonata.admin.security.handler.role
+        # role security information
+        information:
+            EDIT: EDIT
+            LIST: LIST
+            CREATE: CREATE
+            VIEW: VIEW
+            DELETE: DELETE
+            MASTER: MASTER
+    dashboard:
+        blocks:
+            # display a dashboard block
+            - { position: left, type: sonata.admin.block.admin_list }
+
+            # Customize this part to add new block configuration
+#            - { position: right, type: sonata.block.service.text, settings: { content: "<h2>NewsDirect</h2>"} }
+
+sonata_user:
+    admin:
+        user:
+            class: AppBundle\Admin\UserAdmin
+    security_acl: false
+    manager_type: orm
+    impersonating:
+        route:    sonata_admin_dashboard
+    profile:
+        register:
+            # You may customize the registration forms over here
+            form:
+                type:                 sonata_user_registration
+                handler:              sonata.user.registration.form.handler.default
+                name:                 sonata_user_registration_form
+                validation_groups:
+                    # Defaults:
+                    - Registration
+                    - Default
+            # This allows you to specify where you want your user redirected once he activated his account
+            confirm:
+                redirect:
+                    # Set it to false to disable redirection
+                    route: 'sonata_admin_dashboard'
+                    route_parameters: ~
+    #profile:
+    #    register:
+    #        form:
+    #            type: monsieur_lafayette_user_registration
+
+# Sonata Admin
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.stats:
+            contexts:   [admin]
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+        sonata.admin.block.search_result:
+            contexts:   [admin]
+        sonata.block.service.text:
+        sonata.block.service.rss:
+
+
+# use in twig
+sonata_intl:
+    timezone:
+        default: Europe/Paris
+
+# sonata intl
+sonata_intl:
+    timezone:
+        detectors:
+            - sonata.intl.timezone_detector.user
+            - sonata.intl.timezone_detector.locale

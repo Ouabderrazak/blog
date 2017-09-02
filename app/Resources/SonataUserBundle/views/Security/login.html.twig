@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block sonata_nav %}
+{% endblock sonata_nav %}
+
+{% block logo %}
+{% endblock logo %}
+
+{% block sonata_left_side %}
+{% endblock sonata_left_side %}
+
+{% block sonata_wrapper %}
+    <div class="login-box-body">
+        {% render controller("SonataUserBundle:RegistrationFOSUser1:register") %}
+    </div>
+{% endblock sonata_wrapper %}

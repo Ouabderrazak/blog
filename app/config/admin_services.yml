@@ -1,0 +1,19 @@
+services:
+    #---------------------Hide Applicatin sonata user bundle
+    sonata.user.admin.user:
+        class: %sonata.user.admin.user.class%
+        arguments: [~, %sonata.user.admin.user.entity%, %sonata.user.admin.user.controller%]
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: false }
+        calls:
+            - [setTranslationDomain,['AppBundle']]
+            - [setUserManager,['@fos_user.user_manager']]
+    sonata.user.admin.group:
+        abstract: true
+        public: false
+
+    app.admin.post:
+        class: AppBundle\Admin\PostAdmin
+        arguments: [~, AppBundle\Entity\Post, AppBundle:PostAdmin]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Article, label: Article, icon: '<i class="fa fa-book"></i>' }

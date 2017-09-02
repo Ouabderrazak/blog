@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block container %}
+    <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-12 col-md-9">
+            <div class="jumbotron">
+                <h1>Blog</h1>
+                <p>This is an example of homepage of my blog.</p>
+            </div>
+            <div class="row">
+                {% for post in posts %}
+                    <div class="col-6 col-lg-4">
+                        <h2><a  href="{{ path('post_show', {id: post.id}) }}"> {{ post.title }}</a></h2>
+                        <p>{{ post.getShortContent(200)|raw }}</p>
+                    </div><!--/span-->
+                {% endfor %}
+
+            </div><!--/row-->
+        </div><!--/span-->
+
+        <hr>
+    </div>
+{% endblock %}
